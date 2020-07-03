@@ -2,9 +2,14 @@
 body{
     background: #EFF0D1;
 }
-.ui.input {
+#input-fields {
     width: 300px;
+    display: inline;
 }
+.ui.input{
+    display: inline-block;
+}
+
 
 .description {
     margin-right: 10px;
@@ -17,4 +22,19 @@ h1{
     font-family: 'Rouge Script', cursive;
     font-size: 100px;
     color: #262730;
+}
+#pics-input-2 {
+    width: 100px;
+}
+#pics-container{
+    display: inline-block;
+    width: 75%;
+}
+.pic > img{
+    height: 200px;
+
+}
+.pic {
+    display: inline-block;
+    margin: 5px;
 }

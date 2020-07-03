@@ -22,14 +22,21 @@
 <div class="ui container" align="middle">
     <h1>My Gallery</h1>
 
+    <div id="input-fields">
     <div class="ui icon input">
 
-            <input
-                    id="pics-input"
+        <input
+                    id="pics-input-1"
                     type="text"
-                    placeholder="Enter the url and press enter to search">
+                    placeholder="Enter the url"/>
+    </div><div class="ui icon input">
+        <input
+                id="pics-input-2"
+                type="text"
+                placeholder="Name"/>
         <i class="search icon"></i>
 
+    </div>
     </div>
 
     <hr color="#D33F49"/>
@@ -37,8 +44,8 @@
     <div id="pics-container">
         <!-- Pics will be added here dynamically -->
     </div>
-</div>
+    </div>
 
-<script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
