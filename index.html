@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FrontPage</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ui container" align="middle">
+    <h1>My Gallery</h1>
+
+    <div class="ui icon input">
+
+            <input
+                    id="pics-input"
+                    type="text"
+                    placeholder="Enter the url and press enter to search">
+        <i class="search icon"></i>
+
+    </div>
+
+    <hr color="#D33F49"/>
+
+    <div id="pics-container">
+        <!-- Pics will be added here dynamically -->
+    </div>
+</div>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>

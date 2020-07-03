@@ -1,0 +1,20 @@
+
+body{
+    background: #EFF0D1;
+}
+.ui.input {
+    width: 300px;
+}
+
+.description {
+    margin-right: 10px;
+}
+.ui.container{
+    margin-top: 20px;
+}
+
+h1{
+    font-family: 'Rouge Script', cursive;
+    font-size: 100px;
+    color: #262730;
+}
