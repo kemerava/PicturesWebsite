@@ -1,11 +1,7 @@
 // when hover over image the icon is gonna appear to star the image or delete the image
-console.log("here")
 const picsContainer = document.querySelector("#pics-container");
 const picsUrlInput = document.querySelector("#pics-input-1");
 const picsNameInput = document.querySelector("#pics-input-2");
-console.log(picsContainer)
-console.log(picsUrlInput)
-console.log(picsNameInput)
 
 // Add a task
 const createTask = (url, name) => {
@@ -18,9 +14,15 @@ const createTask = (url, name) => {
     const img = document.createElement("img");
     img.src = url;
     img.alt = name;
+    const picName = document.createElement("p");
+    picName.classList.add("overlay")
+    picName.innerText = name;
+    console.log(picName)
     //descriptionElement.classList.add("description");
     //descriptionElement.innerText = description;
     taskElement.appendChild(img);
+    taskElement.appendChild(picName);
+    console.log(taskElement)
 
     /*// Create icon
     const iconElement = document.createElement("i");
