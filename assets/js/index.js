@@ -25,14 +25,25 @@ const createTask = (url, name) => {
     taskElement.appendChild(picName);
     console.log(taskElement)
 
-    // Create icon
+    //Create icon
     const iconElementStar = document.createElement("i");
     iconElementStar.classList.add("star");
+    iconElementStar.classList.add("icon");
     const iconElementDelete = document.createElement("i");
     iconElementDelete.classList.add("trash");
+    iconElementDelete.classList.add("icon");
+
 
     iconElementDelete.addEventListener("click", () => {
         taskElement.remove();
+    });
+    iconElementStar.addEventListener("click", () => {
+        if (iconElementStar.style.color === "#FF9500"){
+            iconElementStar.style.color = rgba(0,0,0,.5);
+        }
+        else{
+            iconElementStar.style.color = "#FF9500"
+        }
     });
 
     taskElement.appendChild(iconElementStar);

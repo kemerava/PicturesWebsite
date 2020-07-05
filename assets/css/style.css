@@ -38,6 +38,9 @@ h1{
     border-color: rgba(0, 0, 0, 0.5);
 
 }
+.pic > p{
+    margin: 0 0;
+}
 .pic {
     display: inline-block;
     margin: 5px;
@@ -45,10 +48,10 @@ h1{
     width: 200px;
     position: relative;
 }
-.pic:hover .overlay {
+.pic:hover .overlay{
     opacity: 1;
 }
-.overlay {
+.overlay{
     position: absolute;
     transition: .5s ease;
     opacity:0;
@@ -62,4 +65,11 @@ h1{
     font-size: 20px;
     padding: 10px;
     text-align: center;
+}
+
+.star, .trash{
+    top: 0;
+    align-items: right;
+    width: 10px;
+    color: rgba(0,0,0,.5);
 }
