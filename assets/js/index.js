@@ -6,6 +6,7 @@ const picsNameInput = document.querySelector("#pics-input-2");
 // Add a task
 const createTask = (url, name) => {
     // Create task div
+    console.log("this is logged")
     const taskElement = document.createElement("div");
     taskElement.classList.add("pic"); // adding the class name
 
