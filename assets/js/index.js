@@ -25,16 +25,18 @@ const createTask = (url, name) => {
     taskElement.appendChild(picName);
     console.log(taskElement)
 
-    /*// Create icon
-    const iconElement = document.createElement("i");
-    iconElement.classList.add("icon");
-    iconElement.classList.add("check");
+    // Create icon
+    const iconElementStar = document.createElement("i");
+    iconElementStar.classList.add("star");
+    const iconElementDelete = document.createElement("i");
+    iconElementDelete.classList.add("trash");
 
-    iconElement.addEventListener("click", () => {
+    iconElementDelete.addEventListener("click", () => {
         taskElement.remove();
     });
 
-    taskElement.appendChild(iconElement);*/
+    taskElement.appendChild(iconElementStar);
+    taskElement.appendChild(iconElementDelete);
     picsContainer.appendChild(taskElement);
 };
 
