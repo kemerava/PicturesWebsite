@@ -6,7 +6,6 @@ const picsNameInput = document.querySelector("#pics-input-2");
 // Add a task
 const createTask = (url, name) => {
     // Create task div
-    console.log("this is logged")
     const taskElement = document.createElement("div");
     taskElement.classList.add("pic"); // adding the class name
 
@@ -18,12 +17,10 @@ const createTask = (url, name) => {
     const picName = document.createElement("p");
     picName.classList.add("overlay")
     picName.innerText = name;
-    console.log(picName)
     //descriptionElement.classList.add("description");
     //descriptionElement.innerText = description;
     taskElement.appendChild(img);
     taskElement.appendChild(picName);
-    console.log(taskElement)
 
     //Create icon
     const iconElementStar = document.createElement("i");
@@ -38,8 +35,9 @@ const createTask = (url, name) => {
         taskElement.remove();
     });
     iconElementStar.addEventListener("click", () => {
-        if (iconElementStar.style.color === "#FF9500"){
-            iconElementStar.style.color = rgba(0,0,0,.5);
+        console.log(iconElementStar.style.color)
+        if (iconElementStar.style.color === "rgb(255, 149, 0)"){
+            iconElementStar.style.color = "rgba(0,0,0,.5)";
         }
         else{
             iconElementStar.style.color = "#FF9500"
