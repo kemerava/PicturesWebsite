@@ -35,7 +35,6 @@ const createTask = (url, name) => {
         taskElement.remove();
     });
     iconElementStar.addEventListener("click", () => {
-        console.log(iconElementStar.style.color)
         if (iconElementStar.style.color === "rgb(255, 149, 0)"){
             iconElementStar.style.color = "rgba(0,0,0,.5)";
         }
